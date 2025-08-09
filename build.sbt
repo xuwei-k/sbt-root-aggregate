@@ -61,7 +61,7 @@ val `sbt-root-aggregate` = projectMatrix
   .in(file("sbt-root-aggregate"))
   .enablePlugins(SbtPlugin)
   .jvmPlatform(
-    Seq("2.12.20", "3.6.4")
+    Seq("2.12.20", "3.7.2")
   )
   .settings(
     commonSettings,
@@ -77,7 +77,7 @@ val `sbt-root-aggregate` = projectMatrix
         case "2.12" =>
           sbtVersion.value
         case _ =>
-          "2.0.0-M4"
+          "2.0.0-M5"
       }
     },
   )
