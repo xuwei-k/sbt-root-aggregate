@@ -1,0 +1,3 @@
+package sbt_root_aggregate
+
+private[sbt_root_aggregate] object SbtRootAggregateCompat

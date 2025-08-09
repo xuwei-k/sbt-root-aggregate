@@ -2,6 +2,7 @@ package sbt_root_aggregate
 
 import sbt.Keys._
 import sbt._
+import sbt_root_aggregate.SbtRootAggregateCompat._
 
 object SbtRootAggregate extends AutoPlugin {
 
@@ -18,7 +19,7 @@ object SbtRootAggregate extends AutoPlugin {
   override val buildSettings: Seq[Def.Setting[?]] = Def.settings(
     sbtRootAggregateExclude := Nil,
     sbtRootAggregateCheckOnLoad := true,
-    sbtRootAggregateCheck := {
+    sbtRootAggregateCheck := Def.uncached {
       val exclude = sbtRootAggregateExclude.value.toSet
       val aggregateProjects = (LocalRootProject / thisProject).value.aggregate.map(_.project).toSet
       val unit = Project.extract(state.value).currentUnit
