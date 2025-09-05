@@ -10,4 +10,4 @@ addSbtPlugin("com.github.sbt" % "sbt-release" % "1.4.0")
 
 addSbtPlugin("com.github.xuwei-k" % "scalafix-check" % "0.1.0")
 
-addSbtPlugin("com.github.xuwei-k" % "sbt-root-aggregate" % "0.1.0)
+addSbtPlugin("com.github.xuwei-k" % "sbt-root-aggregate" % "0.1.0")
