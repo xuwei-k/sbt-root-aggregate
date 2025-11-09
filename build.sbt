@@ -82,4 +82,4 @@ val `sbt-root-aggregate` = projectMatrix
     },
   )
 
-ThisBuild / scalafixDependencies += "com.github.xuwei-k" %% "scalafix-rules" % "0.6.17"
+ThisBuild / scalafixDependencies += "com.github.xuwei-k" %% "scalafix-rules" % "0.6.18"
