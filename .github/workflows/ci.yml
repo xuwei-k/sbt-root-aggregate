@@ -12,7 +12,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-        - java: 8
+        - java: 17
           project: 2_12
         - java: 25
           project: 2_12
