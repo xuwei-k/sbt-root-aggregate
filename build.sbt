@@ -1,5 +1,7 @@
 import sbtrelease.ReleasePlugin.autoImport.ReleaseTransformations.*
 
+def sbt2 = "2.0.0-RC11"
+
 val commonSettings = Def.settings(
   organization := "com.github.xuwei-k",
   publishTo := (if (isSnapshot.value) None else localStaging.value),
@@ -61,7 +63,7 @@ val `sbt-root-aggregate` = projectMatrix
   .in(file("sbt-root-aggregate"))
   .enablePlugins(SbtPlugin)
   .jvmPlatform(
-    Seq("2.12.21", "3.8.2")
+    Seq("2.12.21", scala_version_from_sbt_version.ScalaVersionFromSbtVersion(sbt2))
   )
   .settings(
     commonSettings,
@@ -77,7 +79,7 @@ val `sbt-root-aggregate` = projectMatrix
         case "2.12" =>
           sbtVersion.value
         case _ =>
-          "2.0.0-RC11"
+          sbt2
       }
     },
   )
