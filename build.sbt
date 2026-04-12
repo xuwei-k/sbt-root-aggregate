@@ -33,7 +33,7 @@ val commonSettings = Def.settings(
     <connection>scm:git:git@github.com:xuwei-k/sbt-root-aggregate.git</connection>
   </scm>
   ),
-  description := "check aggregate",
+  description := "check aggregate all sub projects",
   organization := "com.github.xuwei-k",
   homepage := Some(url("https://github.com/xuwei-k/sbt-root-aggregate")),
   licenses := List(
