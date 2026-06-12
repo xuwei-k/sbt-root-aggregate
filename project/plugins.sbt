@@ -1,6 +1,6 @@
 libraryDependencies += "com.github.xuwei-k" %% "scala-version-from-sbt-version" % "0.1.0"
 
-addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.14.6")
+addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.14.7")
 
 addSbtPlugin("com.eed3si9n" % "sbt-projectmatrix" % "0.11.0")
 
