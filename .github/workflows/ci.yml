@@ -28,6 +28,7 @@ jobs:
         distribution: temurin
     - uses: sbt/setup-sbt@v1
     - run: sbt -v
+           --server
            "all scalafmtSbtCheck scalafmtCheckAll scalafixCheckAll scalafixConfigRuleNamesSortCheck"
            "project sbt-root-aggregate${{ matrix.project }}"
            test
