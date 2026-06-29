@@ -1,6 +1,6 @@
 import sbtrelease.ReleasePlugin.autoImport.ReleaseTransformations.*
 
-def sbt2 = "2.0.0"
+def sbt2 = "2.0.1"
 def sbt1 = "1.12.12"
 
 val commonSettings = Def.settings(
