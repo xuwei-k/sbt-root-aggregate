@@ -5,7 +5,7 @@ val sbt2 = {
   p.load(new java.io.FileInputStream("project/build.properties"))
   p.getProperty("sbt.version").trim
 }
-def sbt1 = "1.12.13"
+def sbt1 = "1.12.14"
 
 val commonSettings = Def.settings(
   organization := "com.github.xuwei-k",
