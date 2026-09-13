@@ -40,9 +40,9 @@ val commonSettings = Def.settings(
   ),
   description := "check aggregate all sub projects",
   organization := "com.github.xuwei-k",
-  homepage := Some(url("https://github.com/xuwei-k/sbt-root-aggregate")),
+  homepage := Some(uri("https://github.com/xuwei-k/sbt-root-aggregate")),
   licenses := List(
-    "MIT License" -> url("https://opensource.org/licenses/mit-license")
+    "MIT License" -> uri("https://opensource.org/licenses/mit-license")
   ),
 )
 
